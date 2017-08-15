@@ -324,57 +324,57 @@ alpha_exp = [-4.2 -2.0 0.1 2.1 4.1 6.0 8.0 10.0 12.0 14.1 15.1 16.1 16.3 18.3]';
 
 % ***Basic*** plot of lift coefficient vs. angle of attack
 % Question 1
-% figure(2)
-% plot(alpha_deg,clift,'r','Linewidth',1);
-% hold on;
-% plot(alpha_deg,cdrag,'g','Linewidth',1);
-% plot(alpha_deg,cmqc,'b','Linewidth',1);
-% plot(alpha_exp,clift_exp,'k','Linewidth',1);
-% title('Coefficients vs Angle of Attack');
-% xlabel('Angle of Attack (degrees)');
-% ylabel('Lift, Drag, Moment about 1/4 chord and Experimental Lift Coefficients');
-% legend('Lift Coefficient','Drag Coefficient','Moment Coefficient about 1/4 chord','Experimental Lift Coefficient');
+figure(2)
+plot(alpha_deg,clift,'r','Linewidth',1);
+hold on;
+plot(alpha_deg,cdrag,'g','Linewidth',1);
+plot(alpha_deg,cmqc,'b','Linewidth',1);
+plot(alpha_exp,clift_exp,'k','Linewidth',1);
+title('Coefficients vs Angle of Attack');
+xlabel('Angle of Attack (degrees)');
+ylabel('Lift, Drag, Moment about 1/4 chord and Experimental Lift Coefficients');
+legend('Lift Coefficient','Drag Coefficient','Moment Coefficient about 1/4 chord','Experimental Lift Coefficient');
 % % Question 1 part f
-% figure(Npfig)
-% plot(alpha_deg,clift,'b','Linewidth',1);
-% title('Coefficient of Lift vs Angle of Attack for Varying Number of Panels');
-% xlabel('Angle of Attack (degrees)');
-% ylabel('Lift Coefficient');
-% legend('6 panels','26 panels','100 panels');
+figure(Npfig)
+plot(alpha_deg,clift,'b','Linewidth',1);
+title('Coefficient of Lift vs Angle of Attack for Varying Number of Panels');
+xlabel('Angle of Attack (degrees)');
+ylabel('Lift Coefficient');
+legend('6 panels','26 panels','100 panels');
 %Question 2 Part A
 figure(NACAfig);
-% title('Coefficients of Lift and Moment about 1/4 Chord vs Angle of Attack');
-% xlabel('Angle of Attack (degrees)');
-% ylabel('Coefficients of Lift and Moment about 1/4 Chord');
+title('Coefficients of Lift and Moment about 1/4 Chord vs Angle of Attack');
+xlabel('Angle of Attack (degrees)');
+ylabel('Coefficients of Lift and Moment about 1/4 Chord');
 legend('Coefficient of Lift for NACA 2912','Coefficient of Moment for NACA 2912','Coefficient of Lift for NACA 2612','Coefficient of Moment for NACA 2612','Coefficient of Lift for NACA 2412','Coefficient of Moment for NACA 2412')
-% plot(alpha_deg,clift,'r','Linewidth',1);
+plot(alpha_deg,clift,'r','Linewidth',1);
 hold on;
-% plot(alpha_deg,cmqc,'b','Linewidth',1);
+plot(alpha_deg,cmqc,'b','Linewidth',1);
 %Question 2 Part B
-% figure(NACAfig);
-% title('Coefficients of Lift and Moment about 1/4 Chord vs Angle of Attack');
-% xlabel('Angle of Attack (degrees)');
-% ylabel('Coefficients of Lift and Moment about 1/4 Chord');
-% legend('Coefficient of Lift for NACA 2424','Coefficient of Moment for NACA 2424','Coefficient of Lift for NACA 2418','Coefficient of Moment for NACA 2418','Coefficient of Lift for NACA 2412','Coefficient of Moment for NACA 2412')
-% plot(alpha_deg,clift,'r','Linewidth',1);
-% hold on;
-% plot(alpha_deg,cmqc,'b','Linewidth',1);
-% % Question 3 part a
-% figure(6);
-% plot(alpha_deg,clift,'r','Linewidth',1);
-% xlabel('Angle of Attack (degrees)');
-% ylabel('Coefficient of Lift');
-% title('Coefficient of Lift vs Angle of Attack');
-% % Question 3 part b
-% figure(7);
-% plot(alpha_deg,xcp,'m','Linewidth',1);
-% xlabel('Angle of Attack (degrees)');
-% ylabel('Center of Pressure');
-% title('Center of Pressure vs Angle of Attack');
-% Question 3 part c
-% figure(alphafig);
-% plot(xcen(ista:iend),cp(ista:iend),'b','Linewidth',1);
-% xlabel('x-locations of the panel centers');
-% ylabel('Pressure Coefficient');
-% title('Pressure Coefficient vs x-locations of Panel Centers');
-% legend('Alpha = -2 degrees','Alpha = 5 degrees');
+figure(NACAfig);
+title('Coefficients of Lift and Moment about 1/4 Chord vs Angle of Attack');
+xlabel('Angle of Attack (degrees)');
+ylabel('Coefficients of Lift and Moment about 1/4 Chord');
+legend('Coefficient of Lift for NACA 2424','Coefficient of Moment for NACA 2424','Coefficient of Lift for NACA 2418','Coefficient of Moment for NACA 2418','Coefficient of Lift for NACA 2412','Coefficient of Moment for NACA 2412')
+plot(alpha_deg,clift,'r','Linewidth',1);
+hold on;
+plot(alpha_deg,cmqc,'b','Linewidth',1);
+% Question 3 part a
+figure(6);
+plot(alpha_deg,clift,'r','Linewidth',1);
+xlabel('Angle of Attack (degrees)');
+ylabel('Coefficient of Lift');
+title('Coefficient of Lift vs Angle of Attack');
+% Question 3 part b
+figure(7);
+plot(alpha_deg,xcp,'m','Linewidth',1);
+xlabel('Angle of Attack (degrees)');
+ylabel('Center of Pressure');
+title('Center of Pressure vs Angle of Attack');
+%Question 3 part c
+figure(alphafig);
+plot(xcen(ista:iend),cp(ista:iend),'b','Linewidth',1);
+xlabel('x-locations of the panel centers');
+ylabel('Pressure Coefficient');
+title('Pressure Coefficient vs x-locations of Panel Centers');
+legend('Alpha = -2 degrees','Alpha = 5 degrees');
